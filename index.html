@@ -2,64 +2,11 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>我爱陈珊珊</title>
-    <link rel="stylesheet" href="https://www.layuicdn.com/layui-v2.5.4/css/layui.css">
+   
 </head>
 
 <body>
-    <div class="layui-container">
-
-        <div class="row" style="text-align: center;margin-top: 12px " id="head1"> 小姐姐我观察你很久了~ </div>
-        <hr class="layui-bg-blue">
-        <div class="row" style="text-align: center;" id="head2">
-            <h1>做我女朋友好不好~</h1>
-        </div>
-        <div class="row" style="text-align: center;"> <img
-                src="https://myasset.oss-cn-heyuan.aliyuncs.com/images/love1.jpg" id="img"></div>
-        <hr class="layui-bg-gray">
-        <div class="" style="text-align: center;;margin-top: 12px">
-            <button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo" id="agree">同意</button>
-            <button class="layui-btn layui-bg-red" lay-submit lay-filter="formDemo" id="refuse">不同意</button>
-        </div>
-    </div>
-    <script src="https://www.layuicdn.com/layui-v2.5.4/layui.js"></script>
-    <script>
-        const refuseList = ['房子归你', '车子归你', '票子归你', '我也归你', '哼~还不同意，我可生气啦'];
-
-        layui.use(['layer', 'form', 'jquery'], function () {
-            var layer = layui.layer
-                , form = layui.form
-                , $ = layui.jquery;
-            var agree = 0;
-            var refuse = 0;
-
-            //同意
-            $("#agree").click(function () {
-                agree++;
-                var agree_msg = "哇~小姐姐你同意啦,敲开心";
-                layer.msg(agree_msg, { icon: 1, time: 1000, anim: 4 });
-                $("#agree").hide();
-                $("#refuse").hide();
-                $("#head1").hide();
-                $("#head2").hide();
-                $("#img").attr("src", "https://myasset.oss-cn-heyuan.aliyuncs.com/images/happy.jpg");
-            });
-
-            //拒绝
-            $("#refuse").click(function () {
-                if (refuse == refuseList.length) {
-                    $("#refuse").hide();
-                    return;
-                }
-
-                layer.msg(refuseList[refuse], { icon: 5, time: 1500, anim: 4 });
-                refuse++;
-            });
-
-        });
-    </script>
+    <img src="./images/alipay.jpg" />
 </body>
 
 </html>
